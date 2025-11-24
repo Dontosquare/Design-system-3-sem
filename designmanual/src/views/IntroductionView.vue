@@ -1,5 +1,6 @@
 <script setup>
 import HeaderComp from "@/components/HeaderComp.vue";
+import Logo from "@/assets/image/introduction-picture.webp";
 </script>
 
 <template>
@@ -29,8 +30,9 @@ import HeaderComp from "@/components/HeaderComp.vue";
           <p>overskuelighed og let udvidelse. Manualen inkluderer også</p>
           <p>skærmbilleder, der dokumenterer brugen af løsningen.</p>
         </div>
+        <img :src="Logo" alt="Faraos og UCL logo" />
       </div>
-      <div class="text__left">
+      <div class="text__right">
         <div class="text__padding">
           <h3>Tekniske krav</h3>
           <p>For at kunne anvende manualen og køre løsningen</p>
@@ -61,6 +63,12 @@ import HeaderComp from "@/components/HeaderComp.vue";
             <li>Firebase CLI (til hosting og databasefunktionalitet)</li>
           </ul>
         </div>
+        <div class="text__padding">
+          <h3>Bemærk:</h3>
+          <p>Internetadgang er nødvendig for at hente data fra</p>
+          <p>Firebase og for at kunne vise eksterne ressourcer</p>
+          <p>korrekt.</p>
+        </div>
       </div>
     </div>
   </main>
@@ -85,6 +93,6 @@ main {
 
 .text__wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 </style>
