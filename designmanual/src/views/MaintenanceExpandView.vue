@@ -5,7 +5,7 @@ import HeaderComp from '@/components/HeaderComp.vue';
 <template>
   <HeaderComp></HeaderComp>
   <main>
-    This is Import
+    This is Maintenance
     <Footer>
       <div class="Footer__controls">
           <div>

@@ -72,7 +72,7 @@ const router = createRouter({
     {
       path: "/maintenance-expand",
       name: "maintenance-expand",
-      component: () => import("../views/MaintenenceexpandView.vue"),
+      component: () => import("../views/MaintenanceExpandView.vue"),
     },
     {
       path: "/troubleshooting",
