@@ -23,8 +23,9 @@ import HeaderComp from '@/components/HeaderComp.vue';
           <li>Download GitHub Desktop - <a href="https://github.com/apps/desktop">Link til download</a></li>
           <li>Følg installationsguiden.</li>
         </ul>
+        <img class="guide-image--1" src="..\assets\image\setup-picture.webp" alt="image of the download menu to Github Desktop" />
+        <p></p>
       </div>
-      <img class="guide-image--1" src="..\assets\image\setup-picture.webp" alt="image of the download menu to Github Desktop" />
     </div>
 
   </main>
@@ -40,7 +41,7 @@ import HeaderComp from '@/components/HeaderComp.vue';
   </footer>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../assets/main.scss";
 
 .wrapper {}
@@ -86,13 +87,10 @@ import HeaderComp from '@/components/HeaderComp.vue';
       margin-bottom: 0rem;
     }
   }
-
+  
+  .guide-image--1 {
+  margin-top: 2rem;
+  }
 }
-
-.guide-image--1 {
-  margin-left: 2rem;
-
-}
-
 
 </style>
