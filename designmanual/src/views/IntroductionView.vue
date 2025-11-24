@@ -85,5 +85,6 @@ main {
 
 .text__wrapper {
   display: flex;
+  justify-content: space-between;
 }
 </style>
