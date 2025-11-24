@@ -5,7 +5,7 @@ import HeaderComp from '@/components/HeaderComp.vue';
 <template>
   <HeaderComp title="2. Opsætning"/>
   <main>
-    This is Setup
+    
     <footer>
       <div class="Footer__controls">
           <div>
@@ -19,7 +19,7 @@ import HeaderComp from '@/components/HeaderComp.vue';
   </main>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../assets/main.scss";
 
 

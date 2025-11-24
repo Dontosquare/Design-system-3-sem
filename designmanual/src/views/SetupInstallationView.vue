@@ -24,7 +24,34 @@ import HeaderComp from '@/components/HeaderComp.vue';
           <li>Følg installationsguiden.</li>
         </ul>
         <img class="guide-image--1" src="..\assets\image\setup-picture.webp" alt="image of the download menu to Github Desktop" />
-        <p></p>
+        <p>2. Klon projektet fra GitHub</p>
+        <ul>
+          <li>Åbn GitHub Desktop.</li>
+          <li>Klik på “File → Clone Repository”.</li>
+          <li>Vælg repository fra GitHub (eller indsæt URLen).</li>
+        </ul>
+        <img class="guide-image--2" src="..\assets\image\setup-picture-2.webp" alt="A guide on how to clone GitHub repository" />
+        <p>3. Installer Node.js</p>
+        <ul>
+          <li>Download Node.js - <a href="https://nodejs.org.">Link til download</a></li>
+          <li>Kør installationsfilen og følg instruktionerne.</li>
+        </ul>
+        <img class="guide-image--3" src="..\assets\image\setup-picture-3.webp" alt="Image of where to download Node.js" />
+        <p>4. Installer Firebase CLI</p>
+        <ul>
+          <li>Åbn terminal eller kommandoprompt.</li>
+          <li>Skriv denne prompt:</li>
+        </ul>
+        <img class="guide-image--4" src="..\assets\image\setup-picture-4.webp" alt="Image of a prompt command" />
+        <p>5. Installer projektets afhængigheder</p>
+        <ul>
+          <li>Åbn terminalen i projektmappen (den mappe du klonede)</li>
+          <li>Skriv denne prompt:</li>
+        </ul>
+        <img class="guide-image--5" src="..\assets\image\setup-picture-5.webp" alt="Image of a prompt command" />
+        <p>Hvis du gerne vil se et live preview af projektet kan du nu skrive:</p>
+        <img class="guide-image--6" src="..\assets\image\setup-picture-6.webp" alt="Image of a prompt command" />
+        <p style="margin-bottom: 0rem;">Projektet vil nu starte en lokal server, og du kan åbne det i browseren.</p>
       </div>
     </div>
 
@@ -88,8 +115,17 @@ import HeaderComp from '@/components/HeaderComp.vue';
     }
   }
   
-  .guide-image--1 {
+  .guide-image--1,
+  .guide-image--2,
+  .guide-image--3,
+  .guide-image--4,
+  .guide-image--5,
+  .guide-image--6 {
   margin-top: 2rem;
+  }
+
+  a {
+    color: $color-tactical-blue;
   }
 }
 
