@@ -4,7 +4,7 @@ import HeaderComp from '@/components/HeaderComp.vue';
 </script>
 
 <template>
-  <HeaderComp></HeaderComp>
+  <HeaderComp title="1. Introduktion" /> 
   <main>
     This is introduction
   </main>

@@ -3,7 +3,7 @@ import HeaderComp from '@/components/HeaderComp.vue';
 </script>
 
 <template>
-  <HeaderComp></HeaderComp>
+  <HeaderComp title="5. Troubleshooting & FAQ"/>
   <main>
     This is troubleshoot
     <Footer>
