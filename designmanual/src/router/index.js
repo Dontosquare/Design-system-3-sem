@@ -47,17 +47,17 @@ const router = createRouter({
     {
       path: "/manage-import",
       name: "manage-import",
-      component: () => import("../views/ManageImportView.vue"),
+      component: () => import("../views/ManageimportView.vue"),
     },
     {
       path: "/manage-styling",
       name: "manage-styling",
-      component: () => import("../views/ManageStylingView.vue"),
+      component: () => import("../views/ManagestylingView.vue"),
     },
     {
       path: "/manage-routing",
       name: "manage-routing",
-      component: () => import("../views/ManageRoutingView.vue"),
+      component: () => import("../views/ManageroutingView.vue"),
     },
     {
       path: "/manage-JSON",
