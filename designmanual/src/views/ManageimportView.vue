@@ -63,7 +63,7 @@ import FooterComp from '@/components/FooterComp.vue';
     margin-top: 2rem;
 
     .info-image {
-      width: 40%;
+      width: 39%;
     }
   }
 

@@ -22,6 +22,10 @@ body {
   background-color: $color-anubis-black;
 }
 
+main {
+  min-height: 42rem;
+}
+
 h2 {
   font-family: $font-play;
   color: $color-newspaper-white;

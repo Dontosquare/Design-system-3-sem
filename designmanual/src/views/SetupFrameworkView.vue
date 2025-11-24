@@ -82,6 +82,7 @@ import FooterComp from '@/components/FooterComp.vue';
     width: 80%;
 
     h2 {
+      margin-top: 5.5rem;
       margin-bottom: 2rem;
     }
 

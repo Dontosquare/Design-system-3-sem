@@ -105,7 +105,7 @@ import FooterComp from '@/components/FooterComp.vue';
     align-items: center;
 
     .comp-img {
-      width: 15rem;
+      width: 16.4rem;
       padding-right: 4rem;
     }
   }

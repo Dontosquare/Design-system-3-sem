@@ -44,7 +44,7 @@ import FooterComp from '@/components/FooterComp.vue';
 
   .image-wrapper {
     .structure-img {
-      width: 24rem;
+      width: 87%;
       padding-right: 5rem;
     }
   }
