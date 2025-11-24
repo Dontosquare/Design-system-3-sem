@@ -10,7 +10,6 @@ const viewOrder = [
     'manage-component',
     'manage-import',
     'manage-styling',
-    'manage-import',
     'manage-routing',
     'manage-JSON',
     'manage-JSON-template',
