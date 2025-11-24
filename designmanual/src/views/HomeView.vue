@@ -38,15 +38,15 @@ import Logo from "@/assets/image/faraos-logo.webp";
         <p>Uddannelse: Multimediedesigner - Frontend Development</p>
         <p>Semester: 3. semester - 2025</p>
       </div>
+      <div class="footer-knap__wrapper">
+        <button>Start ></button>
+      </div>
       <div class="footer-wrapper">
         <div class="footer__link">
           <p>Link til github</p>
           <p>Link til prototype</p>
         </div>
-        <!-- <div class="footer__knap-dato">
-          <button>Start ></button>
-          <p>Dato for sidst opdatering: d. 28 / 11 - 2025</p>
-        </div> -->
+        <p>Dato for sidst opdatering: d. 28 / 11 - 2025</p>
       </div>
     </div>
   </main>
@@ -89,11 +89,31 @@ li {
 .picture-wrapper img {
   max-width: 100%;
   height: auto;
-  width: 40%;
+  width: 35%;
 }
 
 .text__padding {
   padding-top: 1rem;
+}
+
+.footer-knap__wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+button {
+  display: flex;
+  padding: 0.4rem 4rem;
+  margin-top: 1rem;
+  background-color: $color-anubis-black;
+  color: $color-pharaos-gold;
+  font-family: $font-play;
+  font-size: 1.5rem;
+  font-weight: 1000;
+  cursor: pointer;
+  white-space: nowrap;
+  width: auto;
+  border: none;
 }
 
 .footer-wrapper {
@@ -111,24 +131,5 @@ li {
   font-size: 2rem;
   text-decoration: underline;
   font-weight: 1000;
-}
-
-.footer__knap-dato {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.footer__knap-dato button {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem 1rem;
-  background-color: $color-anubis-black;
-  color: $color-pharaos-gold;
-  font-family: $font-play;
-  font-size: 2rem;
-  cursor: pointer;
-  white-space: nowrap;
-  width: auto;
 }
 </style>

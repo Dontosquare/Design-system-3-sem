@@ -17,7 +17,7 @@ import ManagePicture11 from "@/assets/image/manage-picture-11.webp";
         genanvendelig.
       </p>
       <div class="json__img">
-      <img :src="ManagePicture11" alt="jsonimg"> 
+        <img :src="ManagePicture11" alt="jsonimg" id="jsonimage"> 
       </div>
     </div>
 
@@ -25,10 +25,10 @@ import ManagePicture11 from "@/assets/image/manage-picture-11.webp";
     <Footer>
       <div class="Footer__controls">
           <div>
-              <p>Dato for sidste opdatering: d. 28 / 11 - 2025</p>
+              <p class="footer__p">Dato for sidste opdatering: d. 28 / 11 - 2025</p>
           </div>
           <div>
-              <p># ud af 13</p>
+              <p class="footer__p"># ud af 13</p>
           </div>
       </div>
     </Footer>
@@ -46,17 +46,31 @@ import ManagePicture11 from "@/assets/image/manage-picture-11.webp";
   background-color: $color-anubis-black;
   color: $color-newspaper-white;
   width: 100%;
-  width: 10%;
+  width: 30%;
+}
+
+h2 {
+  margin: 10%;
+}
+
+p {
+  margin: 10%;
 }
 
 .json__img {
-  width: 10%;
-  height: 10%;
+  display: flex;
+}
 
+img#jsonimage {
+  justify-content: center;
 }
 
 .Footer__controls {
     display: flex;
     justify-content: space-between;
+}
+
+.footer__p {
+  margin: 0%;
 }
 </style>
