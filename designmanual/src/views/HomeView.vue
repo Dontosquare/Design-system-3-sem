@@ -43,10 +43,10 @@ import Logo from "@/assets/image/faraos-logo.webp";
           <p>Link til github</p>
           <p>Link til prototype</p>
         </div>
-        <div class="footer__knap-dato">
+        <!-- <div class="footer__knap-dato">
           <button>Start ></button>
           <p>Dato for sidst opdatering: d. 28 / 11 - 2025</p>
-        </div>
+        </div> -->
       </div>
     </div>
   </main>

@@ -1,6 +1,9 @@
 <script setup>
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { useRouter, useRoute } from 'vue-router'
 import { getNextView, getPreviousView } from '../helpers/navigation.js'
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 
 defineOptions({ name: 'RouterView1' })
 
@@ -28,8 +31,12 @@ function handleBack() {
   <header>
     <h1>Titel</h1>
     <div class="header-controls">
-      <button class="control-btn--back" @click="handleBack">Back</button>
-      <button class="control-btn--forward" @click="handleForward">Forward</button>
+      <button class="control-btn--back" @click="handleBack">
+        <FontAwesomeIcon class="icon-left-arrow" :icon="faAngleLeft"></FontAwesomeIcon>
+      </button>
+      <button class="control-btn--forward" @click="handleForward">
+        <FontAwesomeIcon class="icon-right-arrow" :icon="faAngleRight"></FontAwesomeIcon>
+      </button>
     </div>
   </header>
 </template>
@@ -38,16 +45,48 @@ function handleBack() {
 @import '../assets/main.scss';
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 2rem;
-  background-color: red;
+  background-color: $color-pharaos-gold;
+  background-image: url('../assets/image/faraos-logo-2.webp');
+  background-repeat: no-repeat;
+  background-size: 22%;
+  background-position: 0 0rem;
+}
+
+header h1 {
+  font-family: $font-boogaloo;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  padding-left: 4rem;
+  color: $color-newspaper-white;
+  -webkit-text-stroke: 0.5px $color-anubis-black;
 }
 
 .header-controls {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
+.control-btn--back,
+.control-btn--forward {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-anubis-black;
+  border: none;
+  width: 3.5rem;
+  padding: 1rem;
+  color: $color-pharaos-gold;
+  text-align: center;
+}
 
-
-
-
+.icon-left-arrow,
+.icon-right-arrow {
+  font-size: 1.5rem;
+}
 </style>
