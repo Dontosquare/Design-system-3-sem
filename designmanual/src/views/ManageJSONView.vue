@@ -19,24 +19,25 @@ import HeaderComp from '@/components/HeaderComp.vue'
         <p>Denne tilgang gør det både hurtigt og sikkert at vedligeholde navigationen, samtidig med at koden forbliver overskuelig og
           genanvendelig.
         </p>
+      </div>  
         <div class="json__img">
         <img :src="ManagePicture11" alt="jsonimg" id="jsonimage"> 
         </div>
-      </div>
     </div>
 
 
-    <Footer>
-      <div class="Footer__controls">
-          <div>
-              <p class="footer__p">Dato for sidste opdatering: d. 28 / 11 - 2025</p>
-          </div>
-          <div>
-              <p class="footer__p"># ud af 13</p>
-          </div>
-      </div>
-    </Footer>
+
   </main>
+    <footer>
+      <div class="footer__controls">
+          <div>
+            <p class="footer__p">Dato for sidste opdatering: d. 28 / 11 - 2025</p>
+          </div>
+        <div>
+          <p class="footer__p"># ud af 13</p>
+        </div>
+      </div>
+    </footer>
 </template>
 
 <style lang="scss" scoped>
@@ -48,9 +49,6 @@ import HeaderComp from '@/components/HeaderComp.vue'
 
 .json__overall {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  
 }
 
 h2 {
@@ -62,12 +60,11 @@ p {
   display: flex;
   flex-direction: column;
   margin: 1.5rem;
-  width: 30%;
+  width: 40%;
 }
 
-.json__text {
-  flex: 1;          
-  margin-right: 2rem;
+.json__text {          
+  margin-left: 10rem;
 }
 
 .json__img {
@@ -77,11 +74,12 @@ p {
 }
 
 img#jsonimage {
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
+  margin-right: 10rem;
 }
 
-.Footer__controls {
+.footer__controls {
     display: flex;
     justify-content: space-between;
 }
