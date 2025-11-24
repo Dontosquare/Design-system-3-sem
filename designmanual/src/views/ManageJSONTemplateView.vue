@@ -3,7 +3,7 @@ import HeaderComp from '@/components/HeaderComp.vue';
 </script>
 
 <template>
-  <HeaderComp></HeaderComp>
+  <HeaderComp title="3. Drift"/>
   <main>
     This is Template
     <Footer>

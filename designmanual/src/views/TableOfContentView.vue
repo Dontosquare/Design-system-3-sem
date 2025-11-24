@@ -3,7 +3,7 @@ import HeaderComp from '@/components/HeaderComp.vue';
 </script>
 
 <template>
-  <HeaderComp></HeaderComp>
+  <HeaderComp title="Indholdsfortegnelse"/>
   <main>
     This is table of contents
     <Footer>
