@@ -78,14 +78,4 @@ img#jsonimage {
   height: auto;
   margin-right: 10rem;
 }
-
-.footer__controls {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer__p {
-  margin: 0%;
-  width: 100%;
-}
 </style>

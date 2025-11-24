@@ -45,3 +45,13 @@ li {
   color: $color-newspaper-white;
   font-size: 1.3rem;
 }
+
+.footer__controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__p {
+  margin: 0%;
+  width: 100%;
+}

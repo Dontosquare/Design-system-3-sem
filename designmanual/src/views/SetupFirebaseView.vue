@@ -9,10 +9,10 @@ import HeaderComp from '@/components/HeaderComp.vue';
     <Footer>
       <div class="Footer__controls">
           <div>
-              <p>Dato for sidste opdatering: d. 28 / 11 - 2025</p>
+              <p class="footer__p">Dato for sidste opdatering: d. 28 / 11 - 2025</p>
           </div>
           <div>
-              <p># ud af 13</p>
+              <p class="footer__p"># ud af 13</p>
           </div>
       </div>
     </Footer>
@@ -22,8 +22,5 @@ import HeaderComp from '@/components/HeaderComp.vue';
 <style lang="scss">
 @import "../assets/main.scss";
 
-.Footer__controls {
-    display: flex;
-    justify-content: space-between;
-}
+
 </style>
