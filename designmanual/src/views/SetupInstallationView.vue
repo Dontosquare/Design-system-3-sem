@@ -16,16 +16,25 @@ import HeaderComp from '@/components/HeaderComp.vue';
           <li>Firebase CLI<br>Bruges til at administrere Firebase-projektet og til at deploy.</li>
         </ul>
       </div>
+      <div class="guide-wrapper">
+        <h2>Trin for trin guide</h2>
+        <p>1. Installer GitHub Desktop</p>
+        <ul>
+          <li>Download GitHub Desktop - <a href="https://github.com/apps/desktop">Link til download</a></li>
+          <li>Følg installationsguiden.</li>
+        </ul>
+      </div>
+      <img class="guide-image--1" src="..\assets\image\setup-picture.webp" alt="image of the download menu to Github Desktop" />
     </div>
 
   </main>
   <footer>
     <div class="footer__controls">
       <div>
-        <p>Dato for sidste opdatering: d. 28 / 11 - 2025</p>
+        <p class="footer__p">Dato for sidste opdatering: d. 28 / 11 - 2025</p>
       </div>
       <div>
-        <p># ud af 13</p>
+        <p class="footer__p"># ud af 13</p>
       </div>
     </div>
   </footer>
@@ -34,19 +43,56 @@ import HeaderComp from '@/components/HeaderComp.vue';
 <style lang="scss">
 @import "../assets/main.scss";
 
-.wrapper {
-  padding: 2rem;
-}
+.wrapper {}
 
 .intro-text {
+  padding: 2rem;
+  border-bottom: 1px solid #2A2A2A;
 
-  .intro-text-ul{
+  p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .intro-text-ul {
     margin-left: 1.5rem;
+
+    li {
+      margin-bottom: 1rem;
+    }
+
+    li:last-of-type {
+      margin-bottom: 0rem;
+    }
   }
 }
 
-.footer__controls {
-  display: flex;
-  justify-content: space-between;
+.guide-wrapper {
+  padding: 2rem;
+
+  p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  ul {
+    margin-left: 3rem;
+
+    li {
+      margin-bottom: 1rem;
+    }
+
+    li:last-of-type {
+      margin-bottom: 0rem;
+    }
+  }
+
 }
+
+.guide-image--1 {
+  margin-left: 2rem;
+
+}
+
+
 </style>

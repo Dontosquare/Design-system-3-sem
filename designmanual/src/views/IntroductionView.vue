@@ -65,12 +65,12 @@ import HeaderComp from "@/components/HeaderComp.vue";
     </div>
   </main>
   <footer>
-    <div class="Footer__controls">
+    <div class="footer__controls">
       <div>
-        <p>Dato for sidste opdatering: d. 28 / 11 - 2025</p>
+        <p class="footer__p">Dato for sidste opdatering: d. 28 / 11 - 2025</p>
       </div>
       <div>
-        <p>1 ud af 13</p>
+        <p class="footer__p">1 ud af 13</p>
       </div>
     </div>
   </footer>

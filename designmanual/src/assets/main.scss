@@ -45,3 +45,19 @@ li {
   color: $color-newspaper-white;
   font-size: 1.3rem;
 }
+
+footer {
+    background-color: $color-pharaos-gold;
+   
+}
+
+.footer__controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__p {
+  margin: 0%;
+  color: $color-anubis-black;
+  width: 100%;
+}
