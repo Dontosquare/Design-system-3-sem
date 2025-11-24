@@ -5,7 +5,7 @@ import HeaderComp from '@/components/HeaderComp.vue';
 <template>
   <HeaderComp></HeaderComp>
   <main>
-    This is Routing
+    This is Maintenance
   </main>
 </template>
 
