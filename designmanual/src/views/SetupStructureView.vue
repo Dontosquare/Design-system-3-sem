@@ -54,8 +54,4 @@ import FooterComp from '@/components/FooterComp.vue';
     margin-bottom: 1rem;
   }
 }
-
-.color-change {
-  color: $color-pharaos-gold;
-}
 </style>
