@@ -18,6 +18,10 @@ $font-play: "play";
   box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 6px 0 rgba(0, 0, 0, 0.19);
 }
 
+body {
+  background-color: $color-anubis-black;
+}
+
 h2 {
   font-family: $font-play;
   color: $color-newspaper-white;

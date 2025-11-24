@@ -4,45 +4,49 @@ import Logo from "@/assets/image/faraos-logo.webp";
 
 <template>
   <main>
-    <div class="picture-wrapper">
-      <img :src="Logo" alt="Faraos logo" />
-    </div>
-    <div class="text__padding">
-      <h2>[Pharaos Cigarer - Webshop]</h2>
-      <p>Interaktiv Produktmanual</p>
-    </div>
-    <div class="text__padding">
-      <p>Version: v1.0.0 (20.11.2025)</p>
-      <p>Dokumenttype: Drift-, Opsætnings- og Vedligeholdelsesmanual</p>
-    </div>
-    <div class="text__padding">
-      <h2>Udviklet af</h2>
-      <p>Team 2:</p>
-      <ul>
-        <li>Joachim Pors Knudsen - Udvikler & scrummaster</li>
-        <li>Mads Grøndahl - Udvikler & designer</li>
-        <li>Sofie Abildgaard Pedersen - Teamleder, udvikler & lead designer</li>
-      </ul>
-    </div>
-    <div class="text__padding">
-      <h2>Kontakt:</h2>
-      <ul>
-        <li>Email: sape67086@edu.ucl.dk</li>
-      </ul>
-    </div>
-    <div class="text__padding">
-      <p>Institution: UCL - University College Lillebælt</p>
-      <p>Uddannelse: Multimediedesigner - Frontend Development</p>
-      <p>Semester: 3. semester - 2025</p>
-    </div>
-    <div class="footer-wrapper">
-      <div class="footer__link">
-        <p>Link til github</p>
-        <p>Link til prototype</p>
+    <div class="wrapper">
+      <div class="picture-wrapper">
+        <img :src="Logo" alt="Faraos logo" />
       </div>
-      <div class="footer__knap-dato">
-        <button>Start</button>
-        <p>Dato for sidst opdatering: d. 28 / 11 - 2025</p>
+      <div class="text__padding">
+        <h2>[Pharaos Cigarer - Webshop]</h2>
+        <p>Interaktiv Produktmanual</p>
+      </div>
+      <div class="text__padding">
+        <p>Version: v1.0.0 (20.11.2025)</p>
+        <p>Dokumenttype: Drift-, Opsætnings- og Vedligeholdelsesmanual</p>
+      </div>
+      <div class="text__padding">
+        <h2>Udviklet af</h2>
+        <p>Team 2:</p>
+        <ul>
+          <li>Joachim Pors Knudsen - Udvikler & scrummaster</li>
+          <li>Mads Grønbæk - Udvikler & designer</li>
+          <li>
+            Sofie Abildgaard Pedersen - Teamleder, udvikler & lead designer
+          </li>
+        </ul>
+      </div>
+      <div class="text__padding">
+        <h2>Kontakt:</h2>
+        <ul>
+          <li>Email: sape67086@edu.ucl.dk</li>
+        </ul>
+      </div>
+      <div class="text__padding">
+        <p>Institution: UCL - University College Lillebælt</p>
+        <p>Uddannelse: Multimediedesigner - Frontend Development</p>
+        <p>Semester: 3. semester - 2025</p>
+      </div>
+      <div class="footer-wrapper">
+        <div class="footer__link">
+          <p>Link til github</p>
+          <p>Link til prototype</p>
+        </div>
+        <div class="footer__knap-dato">
+          <button>Start ></button>
+          <p>Dato for sidst opdatering: d. 28 / 11 - 2025</p>
+        </div>
       </div>
     </div>
   </main>
@@ -52,8 +56,13 @@ import Logo from "@/assets/image/faraos-logo.webp";
 @import "../assets/main.scss";
 
 main {
-  padding: 2rem;
   background: $color-pharaos-gold;
+  height: 100vh;
+  overflow: auto;
+}
+
+.wrapper {
+  padding: 2rem;
 }
 
 h2 {
@@ -107,8 +116,19 @@ li {
 .footer__knap-dato {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 
 .footer__knap-dato button {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background-color: $color-anubis-black;
+  color: $color-pharaos-gold;
+  font-family: $font-play;
+  font-size: 2rem;
+  cursor: pointer;
+  white-space: nowrap;
+  width: auto;
 }
 </style>
