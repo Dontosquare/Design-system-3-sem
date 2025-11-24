@@ -29,7 +29,7 @@ import FooterComp from '@/components/FooterComp.vue';
         <p>Uploader den færdige build til Firebase Hosting. Bruges hver gang sitet skal opdateres med nyt indhold, nye features eller generelle ændringer efter første deployment.</p>
       </div>
       <div class="image-wrapper">
-        <img class="structure-img" src="..\assets\image\setup-picture-8.webp" alt="image of file structure" />
+        <img class="firebase-img" src="..\assets\image\setup-picture-8.webp" alt="image of firebase logo" />
       </div>
     </div>
   </main>
@@ -76,7 +76,7 @@ import FooterComp from '@/components/FooterComp.vue';
   }
 
   .image-wrapper {
-    .structure-img {
+    .firebase-img {
       width: 30rem;
     }
   }
