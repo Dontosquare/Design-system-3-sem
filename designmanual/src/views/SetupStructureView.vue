@@ -20,7 +20,7 @@ import HeaderComp from '@/components/HeaderComp.vue';
 </template>
 
 <style lang="scss">
-// Husk import..
+@import "../assets/main.scss";
 
 .Footer__controls {
     display: flex;
