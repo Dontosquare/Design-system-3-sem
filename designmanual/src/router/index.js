@@ -12,37 +12,37 @@ const router = createRouter({
     {
       path: "/tableofcontent",
       name: "tableofcontent",
-      component: () => import("../views/AboutView.vue"),
+      component: () => import("../views/TableOfContentView.vue"),
     },
     {
       path: "/introduction",
       name: "introduction",
-      component: () => import("../views/AboutView.vue"),
+      component: () => import("../views/IntroductionView.vue"),
     },
     {
       path: "/setup-installation",
       name: "setup-installation",
-      component: () => import("../views/AboutView.vue"),
+      component: () => import("../views/SetupInstallationView.vue"),
     },
     {
       path: "/setup-structure",
       name: "setup-structure",
-      component: () => import("../views/AboutView.vue"),
+      component: () => import("../views/SetupStructureView.vue"),
     },
     {
       path: "/setup-firebase",
       name: "setup-firebase",
-      component: () => import("../views/AboutView.vue"),
+      component: () => import("../views/SetupFirebaseView.vue"),
     },
     {
       path: "/setup-framework",
       name: "setup-framework",
-      component: () => import("../views/AboutView.vue"),
+      component: () => import("../views/SetupFrameworkView.vue"),
     },
     {
       path: "/manage-component",
       name: "manage-component",
-      component: () => import("../views/AboutView.vue"),
+      component: () => import("../views//ManageComponentView.vue"),
     },
     {
       path: "/manage-import",
