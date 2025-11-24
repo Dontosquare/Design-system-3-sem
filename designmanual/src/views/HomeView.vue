@@ -55,7 +55,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
             target="_blank"
             >Link til github</a
           >
-          <a href="https://prototype-link-her.com" target="_blank"
+          <a href="https://tredje-semester-eksamen.web.app/" target="_blank"
             >Link til prototype</a
           >
         </div>
