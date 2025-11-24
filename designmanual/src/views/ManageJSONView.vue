@@ -1,10 +1,9 @@
 <script setup>
-import HeaderComp from '@/components/HeaderComp.vue';
+import ManagePicture11 from "@/assets/image/manage-picture-11.webp";
 </script>
 
 <template>
-  <HeaderComp></HeaderComp>
-  <main>
+  <main class="main__overall">
     <div class="json__overall">
       <h2>3.5 Dymamisk navigaiton via JSON</h2>
       <p> Burgermenuernes navigation bygger på data hentet fra en JSON fil, som indeholder bl.a
@@ -17,6 +16,9 @@ import HeaderComp from '@/components/HeaderComp.vue';
       <p>Denne tilgang gør det både hurtigt og sikkert at vedligeholde navigationen, samtidig med at koden forbliver overskuelig og
         genanvendelig.
       </p>
+      <div class="json__img">
+      <img :src="ManagePicture11" alt="jsonimg"> 
+      </div>
     </div>
 
 
@@ -33,13 +35,24 @@ import HeaderComp from '@/components/HeaderComp.vue';
   </main>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../assets/main.scss";
+
+.main__overall {
+  background-color: $color-anubis-black;
+}
 
 .json__overall {
   background-color: $color-anubis-black;
   color: $color-newspaper-white;
   width: 100%;
+  width: 10%;
+}
+
+.json__img {
+  width: 10%;
+  height: 10%;
+
 }
 
 .Footer__controls {
