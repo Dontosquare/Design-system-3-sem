@@ -5,7 +5,21 @@ import HeaderComp from '@/components/HeaderComp.vue';
 <template>
   <HeaderComp></HeaderComp>
   <main>
-    This is JSON
+    <div class="json__overall">
+      <h2>3.5 Dymamisk navigaiton via JSON</h2>
+      <p> Burgermenuernes navigation bygger på data hentet fra en JSON fil, som indeholder bl.a
+        navnene på de navigationsknapper, der vises i menuen.
+      </p>
+      <p>Når der skal foretages ændringer i menuen, kan man nøjes med at opdatere titlerne i de relevante arrays i JSON filerne</p>
+      <p>Selve Header-komponenten håndtere automatisk både struktur og styling, så ændringerne slår igennem  uden yderligere justeringer
+        i komponentkoden.
+      </p>
+      <p>Denne tilgang gør det både hurtigt og sikkert at vedligeholde navigationen, samtidig med at koden forbliver overskuelig og
+        genanvendelig.
+      </p>
+    </div>
+
+
     <Footer>
       <div class="Footer__controls">
           <div>
@@ -21,6 +35,12 @@ import HeaderComp from '@/components/HeaderComp.vue';
 
 <style lang="scss">
 @import "../assets/main.scss";
+
+.json__overall {
+  background-color: $color-anubis-black;
+  color: $color-newspaper-white;
+  width: 100%;
+}
 
 .Footer__controls {
     display: flex;
