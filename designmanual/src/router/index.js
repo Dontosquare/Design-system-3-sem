@@ -47,37 +47,37 @@ const router = createRouter({
     {
       path: "/manage-import",
       name: "manage-import",
-      component: () => import("../views/AboutView.vue"),
+      component: () => import("../views/ManageimportView.vue"),
     },
     {
       path: "/manage-styling",
       name: "manage-styling",
-      component: () => import("../views/AboutView.vue"),
+      component: () => import("../views/ManagestylingView.vue"),
     },
     {
       path: "/manage-routing",
       name: "manage-routing",
-      component: () => import("../views/AboutView.vue"),
+      component: () => import("../views/ManageroutingView.vue"),
     },
     {
       path: "/manage-JSON",
       name: "manage-JSON",
-      component: () => import("../views/AboutView.vue"),
+      component: () => import("../views/ManageJSONView.vue"),
     },
     {
       path: "/manage-JSON-template",
       name: "manage-JSON-template",
-      component: () => import("../views/AboutView.vue"),
+      component: () => import("../views/ManageJSONTemplateView.vue"),
     },
     {
       path: "/maintenance-expand",
       name: "maintenance-expand",
-      component: () => import("../views/AboutView.vue"),
+      component: () => import("../views/MaintenenceexpandView.vue"),
     },
     {
       path: "/troubleshooting",
       name: "troubleshooting",
-      component: () => import("../views/AboutView.vue"),
+      component: () => import("../views/TroubleshootingView.vue"),
     },
   ],
 });
