@@ -50,8 +50,8 @@ import FooterComp from '@/components/FooterComp.vue';
   }
 
   p {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
 </style>
