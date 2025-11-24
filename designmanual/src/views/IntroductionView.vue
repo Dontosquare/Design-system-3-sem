@@ -84,10 +84,6 @@ main {
 }
 
 .text__wrapper {
-}
-
-.Footer__controls {
   display: flex;
-  justify-content: space-between;
 }
 </style>
