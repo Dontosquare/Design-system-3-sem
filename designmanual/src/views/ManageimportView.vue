@@ -20,7 +20,7 @@ import FooterComp from '@/components/FooterComp.vue';
             På den måde bliver de tilgængelige på tværs af hele projektet.
           </p>
         </div>
-        <img class="info-image" src="..\assets\image\manage-picture-2.webp" alt="image of how global components" />
+        <img class="info-image" src="..\assets\image\manage-picture-2.webp" alt="image of how global components gets imported" />
       </div>
       <div class="info-wrapper">
         <div class="info-wrappers--box">
@@ -31,7 +31,7 @@ import FooterComp from '@/components/FooterComp.vue';
             direkte i HomeView.vue, da det kun er relevant dér.
           </p>
         </div>
-        <img class="info-image" src="..\assets\image\manage-picture-2.webp" alt="image of how global components" />
+        <img class="info-image" src="..\assets\image\manage-picture-3.webp" alt="image of how local components gets imported" />
       </div>
     </div>
   </main>
