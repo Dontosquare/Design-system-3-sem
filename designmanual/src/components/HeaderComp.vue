@@ -5,8 +5,6 @@ import { getNextView, getPreviousView } from '../helpers/navigation.js'
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 
-defineOptions({ name: 'RouterView1' })
-
 const router = useRouter()
 const route = useRoute()
 
@@ -25,11 +23,18 @@ function handleBack() {
     router.push({ name: previousViewName })
   }
 }
+
+const props = defineProps({
+  title: {
+    type: String,
+    required: true
+  }
+})
 </script>
 
 <template>
   <header>
-    <h1>Titel</h1>
+    <h1>{{ title }}</h1>
     <div class="header-controls">
       <button class="control-btn--back" @click="handleBack">
         <FontAwesomeIcon class="icon-left-arrow" :icon="faAngleLeft"></FontAwesomeIcon>

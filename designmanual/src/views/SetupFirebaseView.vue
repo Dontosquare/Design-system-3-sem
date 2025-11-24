@@ -3,7 +3,7 @@ import HeaderComp from '@/components/HeaderComp.vue';
 </script>
 
 <template>
-  <HeaderComp></HeaderComp>
+  <HeaderComp title="2. Opsætning"/>
   <main>
     This is firebase
     <Footer>

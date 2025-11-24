@@ -3,7 +3,7 @@ import HeaderComp from '@/components/HeaderComp.vue';
 </script>
 
 <template>
-  <HeaderComp></HeaderComp>
+  <HeaderComp title="4. Vedligholdelse & udvidelser" />
   <main>
     This is Maintenance
     <Footer>
