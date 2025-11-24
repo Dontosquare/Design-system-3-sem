@@ -76,7 +76,7 @@ import HeaderComp from "@/components/HeaderComp.vue";
   </footer>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../assets/main.scss";
 
 main {
