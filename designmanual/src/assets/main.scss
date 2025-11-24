@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 2rem;
+  box-sizing: border box;
+}
+
+/* VARIABLER */
+$color-anubis-black: #0e0f11;
+$color-pharaos-gold: #efd17a;
+$color-newspaper-white: #fff;
+$color-tactical-blue: #3396e6;
+
+$font-boogaloo: "Boogaloo";
+$font-play: "play";
+
+/* MIXINS */
+@mixin box-shadow {
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 6px 0 rgba(0, 0, 0, 0.19);
+}
+
+h2 {
+  font-family: $font-play;
+  color: $color-newspaper-white;
+  font-size: 1.5rem;
+}
