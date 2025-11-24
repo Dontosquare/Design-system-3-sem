@@ -106,21 +106,28 @@ li {
 .footer-knap__wrapper {
   display: flex;
   justify-content: end;
+  padding-top: 0.5rem;
+}
+
+.footer-knap__wrapper a {
+  text-decoration: none;
 }
 
 button {
   display: flex;
-  padding: 0.4rem 4rem;
-  margin-top: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 1rem;
   background-color: $color-anubis-black;
   color: $color-pharaos-gold;
   font-family: $font-play;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 1000;
   cursor: pointer;
   white-space: nowrap;
   width: auto;
   border: none;
+  gap: 7rem;
 }
 
 .footer-wrapper {
