@@ -23,6 +23,44 @@ import HeaderComp from "@/components/HeaderComp.vue";
           <li>Vedligeholdelse og drift af løsningen</li>
           <li>Troubleshooting / FAQ for hurtig fejlfinding</li>
         </ul>
+        <div class="text__padding">
+          <p>Applikationen er bygget som en Single Page Application</p>
+          <p>(SPA) med modulære komponenter, hvilket sikrer</p>
+          <p>overskuelighed og let udvidelse. Manualen inkluderer også</p>
+          <p>skærmbilleder, der dokumenterer brugen af løsningen.</p>
+        </div>
+      </div>
+      <div class="text__left">
+        <div class="text__padding">
+          <h3>Tekniske krav</h3>
+          <p>For at kunne anvende manualen og køre løsningen</p>
+          <p>korrekt, skal følgende krav være opfyldt:</p>
+        </div>
+        <div class="text__padding">
+          <h3>Browser:</h3>
+          <ul>
+            <li>
+              Chrome, Firefox, Edge eller Safari (seneste version anbefales)
+            </li>
+          </ul>
+        </div>
+        <div class="text__padding">
+          <h3>Operativsystem:</h3>
+          <ul>
+            <li>Windows 10 eller nyere</li>
+            <li>macOS 10.15 eller nyere</li>
+            <li>Linux (Ubuntu 20.04+ anbefales)</li>
+          </ul>
+        </div>
+        <div class="text__padding">
+          <h3>Dependencies / Software:</h3>
+          <ul>
+            <li>Node.js ≥ 18</li>
+            <li>npm ≥ 9</li>
+            <li>Git</li>
+            <li>Firebase CLI (til hosting og databasefunktionalitet)</li>
+          </ul>
+        </div>
       </div>
     </div>
   </main>
@@ -41,12 +79,15 @@ import HeaderComp from "@/components/HeaderComp.vue";
 <style lang="scss">
 @import "../assets/main.scss";
 
+main {
+  padding: 2rem;
+}
+
+.text__wrapper {
+}
+
 .Footer__controls {
   display: flex;
   justify-content: space-between;
-}
-
-main {
-  padding: 2rem;
 }
 </style>
