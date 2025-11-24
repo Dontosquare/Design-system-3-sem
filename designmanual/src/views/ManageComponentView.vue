@@ -5,11 +5,25 @@ import HeaderComp from '@/components/HeaderComp.vue';
 <template>
   <HeaderComp></HeaderComp>
   <main>
-    This is Component
+    This is 
+    <Footer>
+      <div class="Footer__controls">
+          <div>
+              <p>Dato for sidste opdatering: d. 28 / 11 - 2025</p>
+          </div>
+          <div>
+              <p># ud af 13</p>
+          </div>
+      </div>
+    </Footer>
   </main>
 </template>
 
 <style lang="scss">
 // Husk import..
 
+.Footer__controls {
+    display: flex;
+    justify-content: space-between;
+}
 </style>
