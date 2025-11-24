@@ -1,6 +1,7 @@
 <script setup>
 import ManagePicture11 from "@/assets/image/manage-picture-11.webp";
 import HeaderComp from '@/components/HeaderComp.vue'
+import FooterComp from '@/components/FooterComp.vue';
 </script>
 
 <template>
@@ -28,16 +29,7 @@ import HeaderComp from '@/components/HeaderComp.vue'
 
 
   </main>
-    <footer>
-      <div class="footer__controls">
-          <div>
-            <p class="footer__p">Dato for sidste opdatering: d. 28 / 11 - 2025</p>
-          </div>
-        <div>
-          <p class="footer__p"># ud af 13</p>
-        </div>
-      </div>
-    </footer>
+  <FooterComp />
 </template>
 
 <style lang="scss" scoped>

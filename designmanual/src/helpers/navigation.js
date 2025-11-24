@@ -40,3 +40,15 @@ export function getPreviousView(currentViewName) {
 
     return null // No previous view available
 }
+
+// NEW FUNCTION: Get current page number and total pages
+export function getPageInfo(currentViewName) {
+  const currentIndex = viewOrder.indexOf(currentViewName)
+  const currentPage = currentIndex + 1  // +1 because arrays start at 0
+  const totalPages = viewOrder.length
+  
+  return {
+    currentPage: currentPage,
+    totalPages: totalPages
+  }
+}
