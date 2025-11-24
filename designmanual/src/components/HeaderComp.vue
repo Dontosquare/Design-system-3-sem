@@ -25,11 +25,29 @@ function handleBack() {
 </script>
 
 <template>
-  <div>
-    <h1>This is View 1</h1>
-    <button @click="handleBack">Back</button>
-    <button @click="handleForward">Forward</button>
-  </div>
+  <header>
+    <h1>Titel</h1>
+    <div class="header-controls">
+      <button class="control-btn--back" @click="handleBack">Back</button>
+      <button class="control-btn--forward" @click="handleForward">Forward</button>
+    </div>
+  </header>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+@import '../assets/main.scss';
+
+header {
+  padding: 2rem;
+  background-color: red;
+}
+
+.header-controls {
+  display: flex;
+}
+
+
+
+
+
+</style>
