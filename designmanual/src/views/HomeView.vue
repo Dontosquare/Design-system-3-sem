@@ -1,5 +1,8 @@
 <script setup>
+import { RouterLink } from "vue-router";
 import Logo from "@/assets/image/faraos-logo.webp";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 </script>
 
 <template>
@@ -39,7 +42,11 @@ import Logo from "@/assets/image/faraos-logo.webp";
         <p>Semester: 3. semester - 2025</p>
       </div>
       <div class="footer-knap__wrapper">
-        <button>Start ></button>
+        <RouterLink to="/tableofcontent">
+          <button>
+            Start <FontAwesomeIcon :icon="faAngleRight"></FontAwesomeIcon>
+          </button>
+        </RouterLink>
       </div>
       <div class="footer-wrapper">
         <div class="footer__link">
@@ -131,5 +138,6 @@ button {
   font-size: 2rem;
   text-decoration: underline;
   font-weight: 1000;
+  cursor: pointer;
 }
 </style>
