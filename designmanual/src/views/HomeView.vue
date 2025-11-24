@@ -50,8 +50,14 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
       </div>
       <div class="footer-wrapper">
         <div class="footer__link">
-          <p>Link til github</p>
-          <p>Link til prototype</p>
+          <a
+            href="https://github.com/Dontosquare/Tredje-Semester-Projekt"
+            target="_blank"
+            >Link til github</a
+          >
+          <a href="https://tredje-semester-eksamen.web.app/" target="_blank"
+            >Link til prototype</a
+          >
         </div>
         <p>Dato for sidst opdatering: d. 28 / 11 - 2025</p>
       </div>
@@ -146,5 +152,14 @@ button {
   text-decoration: underline;
   font-weight: 1000;
   cursor: pointer;
+}
+
+.footer__link a {
+  font-size: 2rem;
+  text-decoration: underline;
+  font-weight: 1000;
+  cursor: pointer;
+  color: $color-anubis-black;
+  font-family: $font-play;
 }
 </style>
