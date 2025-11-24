@@ -35,13 +35,18 @@ import Logo from "@/assets/image/faraos-logo.webp";
     <p>Semester: 3. semester - 2025</p>
   </div>
   <div class="footer-wrapper">
-    <p class="forside-footer__link">Link til github</p>
-    <p class="forside-footer__link">Link til prototype</p>
-    <p></p>
+    <div class="footer__link">
+      <p>Link til github</p>
+      <p>Link til prototype</p>
+    </div>
+    <div class="footer__knap-dato">
+      <button>Start</button>
+      <p>Dato for sidst opdatering: d. 28 / 11 - 2025</p>
+    </div>
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../assets/main.scss";
 
 body {
@@ -73,10 +78,35 @@ li {
 .picture-wrapper img {
   max-width: 100%;
   height: auto;
-  width: 50%;
+  width: 40%;
 }
 
 .text__padding {
   padding-top: 1rem;
+}
+
+.footer-wrapper {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__link {
+  display: flex;
+  gap: 3rem;
+}
+
+.footer__link p {
+  font-size: 2rem;
+  text-decoration: underline;
+  font-weight: 1000;
+}
+
+.footer__knap-dato {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__knap-dato button {
 }
 </style>
