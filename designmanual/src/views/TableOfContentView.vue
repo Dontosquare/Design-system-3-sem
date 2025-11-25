@@ -1,17 +1,19 @@
 <script setup>
-import HeaderComp from '@/components/HeaderComp.vue';
-import FooterComp from '@/components/FooterComp.vue';
+import HeaderComp from "@/components/HeaderComp.vue";
+import FooterComp from "@/components/FooterComp.vue";
 </script>
 
 <template>
-  <HeaderComp title="Indholdsfortegnelse"/>
+  <HeaderComp title="Indholdsfortegnelse" />
   <main>
-    This is table of contents
+    <h2>1. Introduktion</h2>
+    <div class="text__padding">
+      <h2>1. Introduktion</h2>
+    </div>
   </main>
   <FooterComp />
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../assets/main.scss";
-
 </style>
