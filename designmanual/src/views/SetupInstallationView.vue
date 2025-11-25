@@ -111,22 +111,15 @@ import FooterComp from '@/components/FooterComp.vue';
   .guide-image--5,
   .guide-image--6 {
   margin-top: 2rem;
+  width: 100%;
+  }
+
+  .guide-image--6 {
+    margin-top: 0rem;
   }
 
   a {
     color: $color-tactical-blue;
   }
 }
-
-@media (max-width: 800px) {
-  .guide-image--1,
-  .guide-image--2,
-  .guide-image--3,
-  .guide-image--4,
-  .guide-image--5,
-  .guide-image--6 {
-    width: 100%;
-  }
-}
-
 </style>

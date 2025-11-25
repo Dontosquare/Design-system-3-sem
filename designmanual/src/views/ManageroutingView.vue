@@ -61,8 +61,16 @@ import FooterComp from '@/components/FooterComp.vue';
       margin-bottom: 2rem;
     }
   }
-
 }
 
+@media (max-width: 800px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .examples-wrapper img {
+    width: 100%;
+  }
+}
 
 </style>

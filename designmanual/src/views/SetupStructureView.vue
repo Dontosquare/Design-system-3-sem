@@ -11,16 +11,11 @@ import FooterComp from '@/components/FooterComp.vue';
         <h2>2.2 Projektstruktur</h2>
         <p>Filer og mapper er opdelt således:</p>
         <p><span class="color-change">/src</span> – Indeholder al kildekoden for projektet, opdelt i flere mapper.</p>
-        <p><span class="color-change">/src/assets</span> – Indeholder billeder, ikoner samt main.scss-filen, som
-          indeholder skrifttyper og farver.</p>
-        <p><span class="color-change">/src/components</span> – Indeholder diverse komponenter og er det sted, man
-          tilgår, hvis man vil justere et komponent eller tilføje et nyt.</p>
-        <p><span class="color-change">/src/router</span> – Indeholder projektets routing, som definerer, hvordan
-          forskellige sider eller komponenter forbindes via URL-stier.</p>
-        <p><span class="color-change">/src/views</span> – Indeholder projektets sider, som præsenteres for brugeren,
-          typisk bundet til specifikke routes.</p>
-        <p><span class="color-change">/src/App.vue</span> – Hovedkomponenten, som fungerer som rod og ramme for alle
-          øvrige komponenter og views. Det er også her, header og footer importeres direkte.</p>
+        <p><span class="color-change">/src/assets</span> – Indeholder billeder, ikoner samt main.scss-filen, som indeholder skrifttyper og farver.</p>
+        <p><span class="color-change">/src/components</span> – Indeholder diverse komponenter og er det sted, man tilgår, hvis man vil justere et komponent eller tilføje et nyt.</p>
+        <p><span class="color-change">/src/router</span> – Indeholder projektets routing, som definerer, hvordan forskellige sider eller komponenter forbindes via URL-stier.</p>
+        <p><span class="color-change">/src/views</span> – Indeholder projektets sider, som præsenteres for brugeren, typisk bundet til specifikke routes.</p>
+        <p><span class="color-change">/src/App.vue</span> – Hovedkomponenten, som fungerer som rod og ramme for alle øvrige komponenter og views. Det er også her, header og footer importeres direkte.</p>
       </div>
       <div class="image-wrapper">
         <img class="structure-img" src="..\assets\image\setup-picture-7.webp" alt="image of file structure" />
@@ -52,6 +47,26 @@ import FooterComp from '@/components/FooterComp.vue';
   p {
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    flex-direction: column;
+
+    .text-wrapper {
+      width: 100%;
+    }
+
+    .image-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .structure-img {
+        width: 50%;
+        padding-right: 0rem;
+      }
+    }
   }
 }
 </style>
