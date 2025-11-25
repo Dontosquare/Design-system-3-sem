@@ -22,15 +22,34 @@ import Promo from "@/assets/image/maintenance-picture.webp";
         <h3>Struktur for nye elementer</h3>
         <p>For at udvide projektet følges denne faste struktur</p>
         <ul>
-          <li>Nye sider (views) oprettes i: /src/views</li>
-          <li>Nye komponenter oprettes i: /src/components</li>
-          <li></li>
-          <li></li>
+          <li>Nye sider (views) oprettes i: <span class="color-change">/src/views</span></li>
+          <li>Nye komponenter oprettes i: <span class="color-change">/src/components</span></li>
+          <li>Nye billeder uploades i: <span class="color-change">/src/assets/images</span></li>
+          <li>Nye ikoner uploades i: <span class="color-change">/src/assets/icons</span></li>
         </ul>
+        <p>Denne opdeling sikrer et ensartet, overskueligt og let vedligeholdeligt projekt</p>
       </div>  
         <div class="promo__img">
         <img :src="Promo" alt="promoimg" id="promoimage"> 
         </div>
+    
+    <div class="json__overall">
+      <div class="json__text">
+        <h2>4.2 Best Practice</h2>
+        <p>for at sikre konsistens, skalerbarhed og overskuelighed følger projektet disse retningslinjer:</p>
+
+        <ul>
+          <li><span class="color-change">BEM</span>: Klar og struktureret navngivning af CSS-klasser (Block, Element, Modifier).</li>
+          <li><span class="color-change">Styling på classes</span>: Alle styles anvendes på klasser for at undgå konflikter.</li>
+          <li><span class="color-change">SCSS</span>: Brug af varialer, nesting og mixins for organiseret og genanvendelig styling.</li>
+          <li><span class="color-change">Component-based Approach</span>: Små, isolering komponeneter for bedre genbrug og vedligehold.</li>
+          <li><span class="color-change">Single Responsibility</span>: Komponeneter</li>
+          <li><span class="color-change">BEM</span>: Klar og struktureret navngivning af CSS-klasser (Block, Element, Modifier).</li>
+          <li><span class="color-change">BEM</span>: Klar og struktureret navngivning af CSS-klasser (Block, Element, Modifier).</li>
+          <li><span class="color-change">BEM</span>: Klar og struktureret navngivning af CSS-klasser (Block, Element, Modifier).</li>
+        </ul>
+      </div>  
+    </div>
     </div>
   </main>
   <FooterComp />
