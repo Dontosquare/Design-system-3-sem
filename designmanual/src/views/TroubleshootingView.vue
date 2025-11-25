@@ -75,8 +75,11 @@ import FooterComp from '@/components/FooterComp.vue';
         <li>Problem: Projektet starter ikke, eller der mangler pakker.</li>
         <li>Løsning: Sørg for, at du står i projektets rodmappe i terminalen og kør:</li>
       </ul>
+      <div class="yellow-box">
+        <h3>Hvorfor understøttes Internet Explorer ikke?</h3>
+        <p>Internet Explorer understøtter ikke moderne webstandarder og modtager ikke længere sikkerhedsopdateringer. Derfor fokuserer vi på moderne browsere som Chrome, Edge og Firefox, der giver bedre performance, sikkerhed og brugeroplevelse.</p>
+      </div>
     </div>
-    <div class="yellow-box"></div>
   </main>
   <FooterComp />
 </template>
@@ -107,6 +110,21 @@ import FooterComp from '@/components/FooterComp.vue';
 
     li:last-of-type {
       margin-bottom: 2rem;
+    }
+  }
+
+  .yellow-box {
+    background-color: $color-pharaos-gold;
+    padding: 2rem;
+    
+    h3, p {
+      color: $color-anubis-black;
+      margin: 0rem;
+      padding: 0rem;
+    }
+
+    h3{
+      margin-bottom: 0.5rem;
     }
   }
 }
