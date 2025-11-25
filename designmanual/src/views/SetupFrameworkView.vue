@@ -106,4 +106,27 @@ import FooterComp from '@/components/FooterComp.vue';
     align-items: center;
   }
 }
+
+@media (max-width: 800px) {
+  .wrapper {
+    flex-direction: column;
+
+    .text-wrapper {
+      width: 100%;
+    }
+
+    .text-wrapper-2 {
+      width: 100%;
+
+      h2 {
+        margin-top: 2rem;
+      }
+    }
+
+    .image-wrapper {
+      margin-top: 2rem;
+    }
+  }
+}
+
 </style>
