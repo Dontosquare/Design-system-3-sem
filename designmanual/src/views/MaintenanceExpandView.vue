@@ -21,8 +21,14 @@ import Promo from "@/assets/image/maintenance-picture.webp";
 
         <h3>Struktur for nye elementer</h3>
         <p>For at udvide projektet følges denne faste struktur</p>
+        <ul>
+          <li>Nye sider (views) oprettes i: /src/views</li>
+          <li>Nye komponenter oprettes i: /src/components</li>
+          <li></li>
+          <li></li>
+        </ul>
       </div>  
-        <div class="json__img">
+        <div class="promo__img">
         <img :src="Promo" alt="promoimg" id="promoimage"> 
         </div>
     </div>
@@ -41,6 +47,10 @@ import Promo from "@/assets/image/maintenance-picture.webp";
   display: flex;
 }
 
+h3 {
+  margin-left: 1.5rem;
+}
+
 h2 {
   display: flex;
   margin: 1.5rem;
@@ -48,14 +58,14 @@ h2 {
 
 p {
   margin: 1.5rem;
-  width: 40%;
+  width: 60%;
 }
 
 .json__text {          
   margin-left: 10rem;
 }
 
-.json__img {
+.promo__img {
   flex: 0 0 auto;   
   display: flex; 
   align-items: center;       
