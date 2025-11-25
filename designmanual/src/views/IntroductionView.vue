@@ -1,6 +1,6 @@
 <script setup>
 import HeaderComp from "@/components/HeaderComp.vue";
-import FooterComp from '@/components/FooterComp.vue';
+import FooterComp from "@/components/FooterComp.vue";
 import Logo from "@/assets/image/introduction-picture.webp";
 </script>
 
@@ -19,19 +19,23 @@ import Logo from "@/assets/image/introduction-picture.webp";
           <p>med opsætning, drift og vedligeholdelse af vores</p>
           <p>multimedieløsning.</p>
         </div>
-        <h3>Manualen indeholder detaljerede guides til:</h3>
-        <ul>
-          <li>Opsætning af projektet på lokale maskiner</li>
-          <li>Vedligeholdelse og drift af løsningen</li>
-          <li>Troubleshooting / FAQ for hurtig fejlfinding</li>
-        </ul>
+        <div class="text__padding">
+          <h3>Manualen indeholder detaljerede guides til:</h3>
+          <ul>
+            <li>Opsætning af projektet på lokale maskiner</li>
+            <li>Vedligeholdelse og drift af løsningen</li>
+            <li>Troubleshooting / FAQ for hurtig fejlfinding</li>
+          </ul>
+        </div>
         <div class="text__padding">
           <p>Applikationen er bygget som en Single Page Application</p>
           <p>(SPA) med modulære komponenter, hvilket sikrer</p>
           <p>overskuelighed og let udvidelse. Manualen inkluderer også</p>
           <p>skærmbilleder, der dokumenterer brugen af løsningen.</p>
         </div>
-        <img :src="Logo" alt="Faraos og UCL logo" />
+        <div class="text__padding">
+          <img :src="Logo" alt="Faraos og UCL logo" />
+        </div>
       </div>
       <div class="text__right">
         <div class="text__padding">
@@ -83,8 +87,33 @@ main {
   padding: 2rem;
 }
 
+ul {
+  padding-left: 2rem;
+}
+
+li {
+  padding-top: 1rem;
+}
+
 .text__wrapper {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.text__left,
+.text__right {
+  flex: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: 90%;
+}
+
+.text__padding {
+  padding-top: 2rem;
 }
 </style>
