@@ -58,6 +58,7 @@ header {
   background-image: url('../assets/image/faraos-logo-2.webp');
   background-repeat: no-repeat;
   background-position: 0 0rem;
+  border-bottom: 1px solid $color-anubis-black;
 }
 
 header h1 {
