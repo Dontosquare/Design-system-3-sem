@@ -57,7 +57,7 @@ import Manage6 from "@/assets/image/manage-picture-6.webp";
   <FooterComp />
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../assets/main.scss";
 main {
   padding: 2rem;

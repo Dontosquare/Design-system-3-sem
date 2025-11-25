@@ -30,7 +30,7 @@ import Promo from "@/assets/image/maintenance-picture.webp";
   <FooterComp />
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../assets/main.scss";
 
 .main__overall {
