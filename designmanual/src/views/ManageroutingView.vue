@@ -9,7 +9,7 @@ import FooterComp from '@/components/FooterComp.vue';
     <div class="wrapper">
       <div class="text-wrapper">
         <h2>3.4 SPA-routing</h2>
-        <p>Projektet er opbygget som en <b>Single Page Application (SPA)</b>, hvor navigationen håndteres af Vue Router.</p>
+        <p>Projektet er opbygget som en <b>Single Page Application (SPA)</b>, hvor navigationen håndteres af <RouterLink to="/setup-framework" class="Link-color">Vue</RouterLink> Router.</p>
         <p>I stedet for at indlæse nye sider opdateres kun det område, hvor <<span class="color-change">RouterView</span> /> ligger i App.vue.</p>
         <p>Som intern retningslinje anvendes <<span class="color-change">RouterView</span> /> til al intern navigation mellem undersider, mens almindelige <<span class="color-change">a</span>>-<b>tags bruges kun til eksterne links</b>.</p>
         <p>Det sikrer korrekt SPA-adfærd og undgår unødige sideindlæsninger.</p>

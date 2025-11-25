@@ -41,11 +41,11 @@ import maintenance from "@/assets/image/maintenance-picture-2.webp";
         <p>for at sikre konsistens, skalerbarhed og overskuelighed følger projektet disse retningslinjer:</p>
 
         <ul>
-          <li><span class="color-change">BEM</span>: Klar og struktureret navngivning af CSS-klasser (Block, Element, Modifier).</li>
+          <li><span class="color-change">BEM</span>: Klar og struktureret navngivning af CSS-klasser (Block, Element, Modifier) - block__element--modifier</li>
           <li><span class="color-change">Styling på classes</span>: Alle styles anvendes på klasser for at undgå konflikter.</li>
           <li><span class="color-change">SCSS</span>: Brug af varialer, nesting og mixins for organiseret og genanvendelig styling.</li>
           <li><span class="color-change">Component-based Approach</span>: Små, isolering komponeneter for bedre genbrug og vedligehold.</li>
-          <li><span class="color-change">Single Responsibility</span>: Komponeneter</li>
+          <li><span class="color-change">Single Responsibility</span>: Komponenter har ét klart ansvar, hvilket gør koden overskuelig.</li>
           <li><span class="color-change">Phone-first</span>: Desing starter på mobile enheder; media-queries anvendes til større skærme.</li>
           <li><span class="color-change">Lazy loading</span>: Komponenter og views indlæses kun når nødvendigt, hvilket forbedrer performance.</li>
           <li><span class="color-change">Tilgængelighed (Accessibility / a11y)</span>: Overvejer kontrast, tekststørrelse og tastaturnavigation.</li>

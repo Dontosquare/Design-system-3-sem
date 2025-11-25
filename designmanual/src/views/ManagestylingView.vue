@@ -36,11 +36,11 @@ import Manage6 from "@/assets/image/manage-picture-6.webp";
         </div>
         <div class="text__padding">
           <p>Alt globalt styling & genbruglig styling skal kodes i</p>
-          <p>main.scss filen som ligger i /src/assets/main.scss.</p>
+          <p>main.scss filen som ligger i <span class="color-change">/src/assets/main.scss.</span></p>
         </div>
         <div class="text__padding">
           <p>På den måde kan alle tilgå disse styles, og anvende dem</p>
-          <p>hvorend det er ønsket selv på de components hvor vi</p>
+          <p>hvorend det er ønsket selv på de <RouterLink to="/manage-component" class="Link-color">komponenter</RouterLink> hvor vi</p>
           <p>anvender single reponsibility styling.</p>
         </div>
         <div class="text__padding">

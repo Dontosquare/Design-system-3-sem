@@ -9,7 +9,7 @@ import FooterComp from '@/components/FooterComp.vue';
     <div class="wrapper">
       <div class="text-wrapper">
         <h2>3.2 Import af komponenter</h2>
-        <p>Da projektet er opbygget komponent-baseret, skal nye komponenter importeres afhængigt af, hvor de skal
+        <p>Da projektet er opbygget <RouterLink to="/manage-component" class="Link-color">komponent-baseret</RouterLink>, skal nye komponenter importeres afhængigt af, hvor de skal
           bruges.</p>
       </div>
       <div class="info-wrapper">

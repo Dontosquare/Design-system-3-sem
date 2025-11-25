@@ -12,8 +12,9 @@ import jsonimage  from '@/assets/image/manage-picture-12.webp';
         <h2>3.5.5 Template og script til dynamisk navigation</h2>
         <p> Burgermenuen template- og script-del står for at mappe og parse dataen fra JSON-filen
         </p>
-        <p>Hvis logikken skal udvides, for eksempel for at tilføje flere dropdown-menuer eller underkatagorier, kan man 
-          nemt gøre det ved at tilføje ekstra v-for-loops i templaten. Resten af komponenten håndterer automatisk visning og styling,
+        <p>
+          Hvis logikken skal udvides, for eksempel for at tilføje flere dropdown-menuer eller underkategorier, kan man 
+          nemt gøre det ved at tilføje ekstra v-for-loops i templaten. Resten af <RouterLink to="/manage-component" class="Link-color">komponenten</RouterLink> håndterer automatisk visning og <RouterLink to="/manage-styling" class="Link-color">styling</RouterLink>,
           så ændringerne kan foretages uden at røre andre dele af koden</p>
         <p>Denne opsætning gør navigationen fleksibel, genanvendelig og let at vedligeholde.</p>
         <div class="json-img-wrapper">

@@ -18,9 +18,9 @@ import FooterComp from '@/components/FooterComp.vue';
           Når der skal foretages ændringer i menuen, kan man nøjes med at opdatere titlerne i de relevante arrays i
           JSON filerne.</p>
         <p>
-          Selve Header-komponenten håndtere automatisk både struktur og styling, så ændringerne slår igennem uden
+          Selve Header-komponenten håndtere automatisk både <RouterLink to="/setup-structure" class="Link-color">struktur</RouterLink> og <RouterLink to="/manage-styling" class="Link-color">styling</RouterLink>, så ændringerne slår igennem uden
           yderligere justeringer
-          i komponentkoden.
+          i <RouterLink to="/manage-component" class="Link-color">komponenten</RouterLink>.
         </p>
         <p>
           Denne tilgang gør det både hurtigt og sikkert at vedligeholde navigationen, samtidig med at koden forbliver

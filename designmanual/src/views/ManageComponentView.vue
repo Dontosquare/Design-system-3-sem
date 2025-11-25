@@ -41,7 +41,7 @@ import FooterComp from '@/components/FooterComp.vue';
           </div>
           <div class="text-listing">
             <p class="text-listing-title"><b>Høj performance:</b></p>
-            <p class="text-listing-info">Vue er letvægtigt og leverer hurtige indlæsningstider.</p>
+            <p class="text-listing-info"><RouterLink to="/setup-framework" class="Link-color">Vue</RouterLink> er letvægtigt og leverer hurtige indlæsningstider.</p>
           </div>
           <div class="text-listing">
             <p class="text-listing-title"><b>Konsistent navngivning med PascalCase:</b></p>
