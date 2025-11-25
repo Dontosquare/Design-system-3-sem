@@ -2,6 +2,7 @@
 import HeaderComp from '@/components/HeaderComp.vue';
 import FooterComp from '@/components/FooterComp.vue';
 import Promo from "@/assets/image/maintenance-picture.webp";
+import maintenance from "@/assets/image/maintenance-picture-2.webp";
 </script>
 
 <template>
@@ -30,11 +31,12 @@ import Promo from "@/assets/image/maintenance-picture.webp";
         <p>Denne opdeling sikrer et ensartet, overskueligt og let vedligeholdeligt projekt</p>
       </div>  
         <div class="promo__img">
-        <img :src="Promo" alt="promoimg" id="promoimage"> 
+        <img :src="Promo" alt="promoimg" class="promoimage"> 
+        <img :src="maintenance" alt="colors" class="promoimage">
         </div>
-    
+    </div>
     <div class="json__overall">
-      <div class="json__text">
+      <div class="bp__text">
         <h2>4.2 Best Practice</h2>
         <p>for at sikre konsistens, skalerbarhed og overskuelighed følger projektet disse retningslinjer:</p>
 
@@ -48,8 +50,7 @@ import Promo from "@/assets/image/maintenance-picture.webp";
           <li><span class="color-change">BEM</span>: Klar og struktureret navngivning af CSS-klasser (Block, Element, Modifier).</li>
           <li><span class="color-change">BEM</span>: Klar og struktureret navngivning af CSS-klasser (Block, Element, Modifier).</li>
         </ul>
-      </div>  
-    </div>
+      </div> 
     </div>
   </main>
   <FooterComp />
@@ -59,40 +60,60 @@ import Promo from "@/assets/image/maintenance-picture.webp";
 @import "../assets/main.scss";
 
 .main__overall {
-  background-color: $color-anubis-black;
-}
-
-.json__overall {
   display: flex;
+  flex-direction: column;
 }
 
-h3 {
-  margin-left: 1.5rem;
-}
-
-h2 {
+.json__overall{
   display: flex;
-  margin: 1.5rem;
-}
-
-p {
-  margin: 1.5rem;
-  width: 60%;
+  flex-direction: row;
 }
 
 .json__text {          
-  margin-left: 10rem;
+  width: 60%;
+  padding: 2rem;
+  padding-bottom: 0rem;
 }
 
-.promo__img {
-  flex: 0 0 auto;   
-  display: flex; 
-  align-items: center;       
+h3:first-of-type {
+  margin-top: 2rem;
 }
 
-img#promoimage {
+p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+ul {
+  padding-left: 3rem;
+}
+
+li {
+  margin-top: 1rem;
+}
+
+li:first-of-type {
+  margin-top: 0;
+}
+
+.promo__img {  
+  display: flex;
+  width: 40%;
+  padding: 2rem;
+  flex-direction: column;   
+}
+
+.promoimage {
   max-width: 100%;
-  height: auto;
-  margin-right: 10rem;
+}
+
+.promoimage:last-of-type {
+  margin-top: 2rem;
+}
+
+.bp__text {
+  padding: 2rem;
+  border-top: 2px solid #2a2a2a;
+  width: 100%;
 }
 </style>
