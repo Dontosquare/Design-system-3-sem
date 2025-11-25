@@ -57,7 +57,6 @@ header {
   background-color: $color-pharaos-gold;
   background-image: url('../assets/image/faraos-logo-2.webp');
   background-repeat: no-repeat;
-  background-size: 22%;
   background-position: 0 0rem;
 }
 
@@ -93,5 +92,11 @@ header h1 {
 .icon-left-arrow,
 .icon-right-arrow {
   font-size: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  header h1 {
+    padding-left: 0rem;
+  }
 }
 </style>
