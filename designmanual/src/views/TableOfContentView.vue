@@ -41,11 +41,16 @@ import { RouterLink } from "vue-router";
     </div>
     <div class="text__padding">
       <h2>4. Vedligholdelse</h2>
-      <h3>4.1 Vedligehold & Udvidelser</h3>
-      <h3>4.2 Best Practice</h3>
+      <RouterLink to="/maintenance-expand"
+        ><h3>4.1 Vedligehold & Udvidelser</h3></RouterLink
+      >
+      <RouterLink to="/maintenance-expand"
+        ><h3>4.2 Best Practice</h3></RouterLink
+      >
     </div>
     <div class="text__padding">
       <h2>5. Troubleshooting / FAQ</h2>
+      <RouterLink to="/troubleshooting"><h3>5. Før du koder</h3></RouterLink>
     </div>
   </main>
   <FooterComp />
@@ -56,6 +61,10 @@ import { RouterLink } from "vue-router";
 main {
   padding: 2rem;
   background-color: $color-pharaos-gold;
+}
+
+a {
+  text-decoration: none;
 }
 
 .text__padding {
