@@ -24,7 +24,7 @@ import FooterComp from '@/components/FooterComp.vue';
       </ul>
       <h3>3. Følg best practice</h3>
       <ul>
-        <li>Brug BEM til CSS-klasser.</li>
+        <li>Brug BEM til struktur.</li>
         <li>Styling sker kun via klasser, ikke elementer eller IDs.</li>
         <li>Hold komponenter små og med single responsibility.</li>
         <li>Tænk phone-first og responsive løsninger, når du laver layout.</li>
