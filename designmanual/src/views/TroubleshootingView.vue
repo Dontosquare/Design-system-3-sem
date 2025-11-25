@@ -92,6 +92,11 @@ import FooterComp from '@/components/FooterComp.vue';
     margin-bottom: 2rem;
   }
 
+  h2:last-of-type {
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+  }
+
   ul {
     padding-left: 2.6rem;
 
