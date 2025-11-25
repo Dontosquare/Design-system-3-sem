@@ -62,8 +62,6 @@ import FooterComp from '@/components/FooterComp.vue';
 <style lang="scss" scoped>
 @import "../assets/main.scss";
 
-.wrapper {}
-
 .intro-text {
   padding: 2rem;
   border-bottom: 1px solid #2A2A2A;
@@ -117,6 +115,17 @@ import FooterComp from '@/components/FooterComp.vue';
 
   a {
     color: $color-tactical-blue;
+  }
+}
+
+@media (max-width: 800px) {
+  .guide-image--1,
+  .guide-image--2,
+  .guide-image--3,
+  .guide-image--4,
+  .guide-image--5,
+  .guide-image--6 {
+    width: 100%;
   }
 }
 
