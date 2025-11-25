@@ -16,8 +16,8 @@ import jsonimage  from '@/assets/image/manage-picture-12.webp';
           nemt gøre det ved at tilføje ekstra v-for-loops i templaten. Resten af komponenten håndterer automatisk visning og styling,
           så ændringerne kan foretages uden at røre andre dele af koden</p>
         <p>Denne opsætning gør navigationen fleksibel, genanvendelig og let at vedligeholde.</p>
-        <div class="json__img">
-        <img :src="jsonimage" alt="jsonimg" id="jsonimage"> 
+        <div class="json-img-wrapper">
+        <img :src="jsonimage" alt="jsonimg" class="json-img"> 
         </div>
       </div>  
     </div>
@@ -28,42 +28,34 @@ import jsonimage  from '@/assets/image/manage-picture-12.webp';
 <style lang="scss" scoped>
 @import "../assets/main.scss";
 
-@import "../assets/main.scss";
-
-.main__overall {
-  background-color: $color-anubis-black;
-}
-
 .json__overall {
   display: flex;
-}
-
-h2 {
-  display: flex;
-  margin: 1.5rem;
+  padding: 2rem;
 }
 
 p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 80%;
+}
+
+.json-img-wrapper {
   display: flex;
-  flex-direction: column;
-  margin: 1.5rem;
-  width: 60%;
+  justify-content: center;
+  align-items: center;
 }
 
-.json__text {          
-  margin-left: 10rem;
+.json-img {
+  width: 90%;
 }
 
-.json__img {
-  flex: 0 0 auto;   
-  display: flex;
-  padding: 2rem; 
-  align-items: center;       
-}
+@media (max-width: 800px) {
+  .json-img {
+    width: 100%;
+  }
 
-img#jsonimage {
-  max-width: 100%;
-  height: auto;
-  margin-right: 10rem;
+  p {
+    width: 100%;
+  }
 }
 </style>
