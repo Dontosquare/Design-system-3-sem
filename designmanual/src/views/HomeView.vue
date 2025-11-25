@@ -161,5 +161,18 @@ button {
   cursor: pointer;
   color: $color-anubis-black;
   font-family: $font-play;
+  white-space: nowrap;
+}
+
+@media (max-width: 1000px) {
+  .picture-wrapper img {
+    max-width: 100%;
+    height: auto;
+    width: 50%;
+  }
+
+  .footer__link {
+    gap: 2rem;
+  }
 }
 </style>
