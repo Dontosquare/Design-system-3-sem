@@ -40,15 +40,21 @@ import FooterComp from "@/components/FooterComp.vue";
 @import "../assets/main.scss";
 main {
   padding: 2rem;
+  background-color: $color-pharaos-gold;
 }
 
 .text__padding {
   padding-top: 2rem;
 }
 
+h2 {
+  color: $color-anubis-black;
+}
+
 h3 {
-  font-weight: 100;
+  font-weight: 500;
   padding-left: 2rem;
   cursor: pointer;
+  color: $color-anubis-black;
 }
 </style>
