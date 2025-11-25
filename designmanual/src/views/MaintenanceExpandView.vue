@@ -116,4 +116,32 @@ li:first-of-type {
   border-top: 2px solid #2a2a2a;
   width: 100%;
 }
+
+@media (max-width: 800px) {
+  .json__overall {
+    flex-direction: column;
+  }
+
+  .json__text {
+    width: 90%;
+  }
+
+  ul {
+    padding: 1rem;
+  }
+
+  li {
+    width: 70%;
+  }
+
+  .promo__img {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .promoimage {
+    width: 90%;
+  }
+}
 </style>
+
