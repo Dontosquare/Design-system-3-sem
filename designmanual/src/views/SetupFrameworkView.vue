@@ -12,7 +12,7 @@ import FooterComp from '@/components/FooterComp.vue';
           <h2>2.4 Framework</h2>
           <p class="first-p">
             Løsningen er udviklet i Vue.js, da frameworket tilbyder en moderne og fleksibel
-            tilgang til opbygning af webapplikationer.Vue er let at lære og gør det muligt
+            tilgang til opbygning af webapplikationer. Vue er let at lære og gør det muligt
             for mindre teams at arbejde hurtigt og effektivt, samtidig med at kodekvaliteten
             bevares.
           </p>
@@ -29,7 +29,7 @@ import FooterComp from '@/components/FooterComp.vue';
           </div>
           <div class="text-listing">
             <p class="text-listing-title"><b>Overskuelig struktur:</b></p>
-            <p class="text-listing-info">En klar komponent- og filstruktur gør projektet lettere at organisere og vedligeholde.</p>
+            <p class="text-listing-info">En klar <RouterLink to="/manage-component" class="Link-color">komponent</RouterLink>- og <RouterLink to="/setup-structure " class="Link-color">filstruktur</RouterLink> gør projektet lettere at organisere og vedligeholde.</p>
           </div>
           <div class="text-listing">
             <p class="text-listing-title"><b>Lav indlæringskurve:</b></p>

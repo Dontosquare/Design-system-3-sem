@@ -52,8 +52,6 @@ li {
 .Link-color {
   color: $color-tactical-blue;
   font-weight: 500;
-}
-
-.link-color a {
   text-decoration: none;
+  cursor: pointer;
 }

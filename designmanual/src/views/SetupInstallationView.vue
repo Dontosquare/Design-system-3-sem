@@ -14,7 +14,10 @@ import FooterComp from '@/components/FooterComp.vue';
         <ul class="intro-text-ul">
           <li>Node.js<br>Bruges til at køre udviklingsmiljøet og installere projektets afhængigheder.</li>
           <li>Git<br>Bruges til at hente projektet fra GitHub og håndtere versionsstyring.</li>
-          <li>Firebase CLI<br>Bruges til at administrere Firebase-projektet og til at deploy.</li>
+          <li>
+            <RouterLink to="/setup-firebase" class="Link-color">Firebase CLI</RouterLink><br>Bruges til at administrere
+            Firebase-projektet og til at deploy.
+          </li>
         </ul>
       </div>
       <div class="guide-wrapper">
@@ -24,20 +27,23 @@ import FooterComp from '@/components/FooterComp.vue';
           <li>Download GitHub Desktop - <a href="https://github.com/apps/desktop">Link til download</a></li>
           <li>Følg installationsguiden.</li>
         </ul>
-        <img class="guide-image--1" src="..\assets\image\setup-picture.webp" alt="image of the download menu to Github Desktop" />
+        <img class="guide-image--1" src="..\assets\image\setup-picture.webp"
+          alt="image of the download menu to Github Desktop" />
         <p>2. Klon projektet fra GitHub</p>
         <ul>
           <li>Åbn GitHub Desktop.</li>
           <li>Klik på “File → Clone Repository”.</li>
           <li>Vælg repository fra GitHub (eller indsæt URLen).</li>
         </ul>
-        <img class="guide-image--2" src="..\assets\image\setup-picture-2.webp" alt="A guide on how to clone GitHub repository" />
+        <img class="guide-image--2" src="..\assets\image\setup-picture-2.webp"
+          alt="A guide on how to clone GitHub repository" />
         <p>3. Installer Node.js</p>
         <ul>
           <li>Download Node.js - <a href="https://nodejs.org.">Link til download</a></li>
           <li>Kør installationsfilen og følg instruktionerne.</li>
         </ul>
-        <img class="guide-image--3" src="..\assets\image\setup-picture-3.webp" alt="Image of where to download Node.js" />
+        <img class="guide-image--3" src="..\assets\image\setup-picture-3.webp"
+          alt="Image of where to download Node.js" />
         <p>4. Installer Firebase CLI</p>
         <ul>
           <li>Åbn terminal eller kommandoprompt.</li>
@@ -103,15 +109,15 @@ import FooterComp from '@/components/FooterComp.vue';
       margin-bottom: 0rem;
     }
   }
-  
+
   .guide-image--1,
   .guide-image--2,
   .guide-image--3,
   .guide-image--4,
   .guide-image--5,
   .guide-image--6 {
-  margin-top: 2rem;
-  width: 100%;
+    margin-top: 2rem;
+    width: 70%;
   }
 
   .guide-image--6 {
@@ -120,6 +126,19 @@ import FooterComp from '@/components/FooterComp.vue';
 
   a {
     color: $color-tactical-blue;
+  }
+}
+
+@media (max-width: 800px) {
+  .guide-wrapper {
+    .guide-image--1,
+    .guide-image--2,
+    .guide-image--3,
+    .guide-image--4,
+    .guide-image--5,
+    .guide-image--6 {
+      width: 100%;
+    }
   }
 }
 </style>
