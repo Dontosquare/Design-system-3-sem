@@ -8,7 +8,7 @@ import FooterComp from "@/components/FooterComp.vue";
   <main>
     <h2>1. Introduktion</h2>
     <div class="text__padding">
-      <h2>1. Introduktion</h2>
+      <h2>2. Opsætning</h2>
     </div>
   </main>
   <FooterComp />
@@ -16,4 +16,7 @@ import FooterComp from "@/components/FooterComp.vue";
 
 <style lang="scss" scoped>
 @import "../assets/main.scss";
+main {
+  padding: 2rem;
+}
 </style>
