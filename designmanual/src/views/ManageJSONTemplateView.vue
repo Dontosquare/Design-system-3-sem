@@ -25,7 +25,7 @@ import jsonimage  from '@/assets/image/manage-picture-12.webp';
   <FooterComp />
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../assets/main.scss";
 
 @import "../assets/main.scss";
